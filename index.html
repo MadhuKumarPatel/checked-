@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 400px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 50px;
+            left: 30%;
+        }
+        .lists{
+            height: 30px;
+            width: 400px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: aqua;
+        }
+        .cars{
+            height: 200px;
+            width: 300px;
+           position: absolute;
+           top:50px
+        }
+        #car1:checked~.cars{
+            background-image: url("./car1.jpeg");
+            height: 200px;
+            width: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 5px 5px 25px 6px;
+        }
+        #car2:checked~.cars{
+            background-image: url("./car2.jpeg");
+            height: 200px;
+            width: 100%px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 5px 5px 25px 6px;
+
+        }    
+        #car3:checked~.cars{
+            background-image: url("./car3.jpeg");
+            height: 200px;
+            width: 250px;
+            background-repeat: no-repeat;
+            box-shadow: 5px 5px 25px 6px;
+            background-size: cover;
+
+        }    
+        #car4:checked~.cars{
+            background-image: url("./car4.jpeg");
+            background-repeat: no-repeat;
+            height: 200px;
+            width: 250px;
+            box-shadow: 5px 5px 25px 6px;
+            background-size: cover;
+
+
+        }    
+        #car5:checked~.cars{
+            background-image: url("./car5.jpeg");
+            height: 200px;
+            width: 250px;
+            background-repeat: no-repeat;
+            box-shadow: 5px 5px 25px 6px;
+            background-size: cover;
+
+        }    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="lists">
+            <input id="car1" name="car" type="radio" >car1
+            <input id="car2"  name="car" type="radio" >car2
+            <input id="car3"  name="car" type="radio" >car3
+            <input id="car4"  name="car" type="radio" >car4
+            <input id="car5"  name="car" type="radio" >car5
+        <div class="cars"></div>
+        </div>
+    </div>
+</body>
+</html>
